@@ -15,6 +15,7 @@
 		8E81AB121E6F145600E5373A /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8E81AB111E6F145600E5373A /* pokemon.csv */; };
 		8E81AB151E6F15FD00E5373A /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81AB141E6F15FD00E5373A /* Pokemon.swift */; };
 		8E81AB181E6F591C00E5373A /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81AB171E6F591C00E5373A /* PokeCell.swift */; };
+		8E81AB1A1E6F683C00E5373A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81AB191E6F683C00E5373A /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8E81AB111E6F145600E5373A /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		8E81AB141E6F15FD00E5373A /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8E81AB171E6F591C00E5373A /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		8E81AB191E6F683C00E5373A /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		8E81AAFE1E6F0C9F00E5373A /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				8E81AB191E6F683C00E5373A /* csv.swift */,
 				8E81AB161E6F590000E5373A /* View */,
 				8E81AB131E6F15E800E5373A /* Model */,
 				8E81AAFF1E6F0C9F00E5373A /* AppDelegate.swift */,
@@ -122,6 +125,7 @@
 					8E81AAFB1E6F0C9F00E5373A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X73JUB2RD6;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -167,6 +171,7 @@
 				8E81AB021E6F0C9F00E5373A /* ViewController.swift in Sources */,
 				8E81AB001E6F0C9F00E5373A /* AppDelegate.swift in Sources */,
 				8E81AB151E6F15FD00E5373A /* Pokemon.swift in Sources */,
+				8E81AB1A1E6F683C00E5373A /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
