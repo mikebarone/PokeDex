@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,9 +28,39 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-1S-YTm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tt-iA-LCh">
+                                        <rect key="frame" x="87" y="17" width="201" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="BT1-Ad-ykd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="30"/>
+                                        <color key="textColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1J-yI-1cY">
+                                        <rect key="frame" x="341" y="24.5" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="M2c-SF-vMC"/>
+                                            <constraint firstAttribute="height" constant="26" id="d2Z-sp-LR4"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oq9-yz-9a4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="5Tt-iA-LCh" firstAttribute="top" secondItem="g5C-1S-YTm" secondAttribute="top" constant="17" id="6Tf-bs-DuU"/>
+                                    <constraint firstAttribute="trailing" secondItem="y1J-yI-1cY" secondAttribute="trailing" constant="8" id="EDA-q6-iCx"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Tt-iA-LCh" secondAttribute="trailing" constant="87" id="FhV-0E-NFa"/>
+                                    <constraint firstItem="5Tt-iA-LCh" firstAttribute="centerX" secondItem="g5C-1S-YTm" secondAttribute="centerX" id="NY2-wy-ek0"/>
                                     <constraint firstAttribute="height" constant="75" id="PJJ-SC-ZBl"/>
+                                    <constraint firstItem="5Tt-iA-LCh" firstAttribute="leading" secondItem="g5C-1S-YTm" secondAttribute="leading" constant="87" id="Pj0-F4-2eL"/>
+                                    <constraint firstItem="5Tt-iA-LCh" firstAttribute="centerY" secondItem="g5C-1S-YTm" secondAttribute="centerY" id="Y7o-jr-gzT"/>
+                                    <constraint firstItem="y1J-yI-1cY" firstAttribute="centerY" secondItem="g5C-1S-YTm" secondAttribute="centerY" id="afm-oL-wcF"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Tt-iA-LCh" secondAttribute="bottom" constant="18" id="y3u-VH-8GM"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Yla-0k-euo">
@@ -119,5 +154,6 @@
     <resources>
         <image name="4" width="120" height="120"/>
         <image name="bg" width="1280" height="1024"/>
+        <image name="music" width="100" height="100"/>
     </resources>
 </document>
